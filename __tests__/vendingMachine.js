@@ -12,4 +12,14 @@ describe('vending machine', () => {
             console.log(theVendingMachine.moneyOnMachine)
         })
     })
+
+    describe('display current inventory', () => {
+        it('should return the machines current inventory', () => {
+            theVendingMachine.currentInventory()
+
+            expect(theVendingMachine.inventory).toEqual(inventory)
+
+            console.log(theVendingMachine.inventory)
+        })
+    })
 })
