@@ -7,8 +7,9 @@ describe('vending machine', () => {
     describe('insert coin to machine', () => {
         it('should return new money on machine', () => {
             theVendingMachine.insertCoins(80)
-            expect(theVendingMachine.moneyOnMachine).toEqual(130)
-            console.log(theVendingMachine.moneyOnMachine)
+            const currentMoney = theVendingMachine.moneyOnMachine
+            expect(currentMoney).toEqual(130)
+            console.log(currentMoney)
         })
     })
 
