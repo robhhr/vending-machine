@@ -1,7 +1,8 @@
 const VendingMachine = require('../lib/vendingMachine')
+const inventory = require('../lib/inventory')
 
 describe('vending machine', () => {
-    theVendingMachine = new VendingMachine()
+    let theVendingMachine = new VendingMachine()
 
     describe('insert coin to machine', () => {
         it('should return new money on machine', () => {
