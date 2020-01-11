@@ -22,8 +22,14 @@ describe('vending machine', () => {
 
     describe('it should return a successful purchase', () => {
         it('should return a successful purchase', () => {
-            expect(theVendingMachine.itemPurchase(1, 25)).toBe(true)
+            expect(theVendingMachine.itemPurchase(1, 25)).toEqual(22)
             console.log('item bought')
         })
     })
+
+    // describe('it should reduce inventory when purchased', () => {
+    //     it('should reduce inventory by 1', () => {
+    //         expect(theVendingMachine.inventoryAdjustment())
+    //     })
+    // })
 })
