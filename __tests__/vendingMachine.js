@@ -19,4 +19,11 @@ describe('vending machine', () => {
             console.log(theVendingMachine.currentInventory())
         })
     })
+
+    describe('it should return a successful purchase', () => {
+        it('should return a successful purchase', () => {
+            expect(theVendingMachine.itemPurchase(1, 25)).toBe(true)
+            console.log('item bought')
+        })
+    })
 })
