@@ -35,4 +35,10 @@ describe('vending machine', () => {
             console.log(theVendingMachine.individualInventory(3))
         })
     })
+
+    describe('affordable products', () => {
+        it('should return if the product can be bought', () => {
+            expect(theVendingMachine.itemsForPurchase(3, 20))
+        })
+    })
 })
