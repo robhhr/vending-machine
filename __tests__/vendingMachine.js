@@ -41,4 +41,10 @@ describe('vending machine', () => {
             expect(theVendingMachine.itemsForPurchase(3, 20))
         })
     })
+
+    describe('coin value by coin name', () => {
+        it('should return the coin value by writing the name', () => {
+            expect(theVendingMachine.coinValue('tenCents')).toBe(0.1)
+        })
+    })
 })
