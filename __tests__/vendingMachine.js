@@ -26,10 +26,4 @@ describe('vending machine', () => {
             console.log('item bought')
         })
     })
-
-    // describe('it should reduce inventory when purchased', () => {
-    //     it('should reduce inventory by 1', () => {
-    //         expect(theVendingMachine.inventoryAdjustment())
-    //     })
-    // })
 })
