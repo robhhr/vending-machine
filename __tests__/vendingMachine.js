@@ -71,4 +71,16 @@ describe('vending machine', () => {
             ).toEqual(120)
         })
     })
+
+    describe('resupply inventory', () => {
+        it('should resupply inventory by 1', () => {
+            expect(
+                theVendingMachine.refillInventoryAfterPurchase(
+                    3,
+                    'twoDollars',
+                    'twoDollars',
+                ),
+            ).toEqual(7)
+        })
+    })
 })
