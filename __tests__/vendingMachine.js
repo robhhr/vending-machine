@@ -60,11 +60,11 @@ describe('vending machine', () => {
         it('should return the change for two coins payment', () => {
             expect(
                 theVendingMachine.returnChange(
-                    1,
+                    2,
                     'twoDollars',
-                    'oneDollar',
+                    'twoDollars',
                 ),
-            ).toEqual(0)
+            )
         })
     })
 
