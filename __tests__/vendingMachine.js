@@ -1,5 +1,4 @@
 const VendingMachine = require('../lib/vendingMachine')
-const inventory = require('../lib/inventory')
 
 describe('vending machine', () => {
     let theVendingMachine = new VendingMachine()
@@ -16,7 +15,6 @@ describe('vending machine', () => {
     describe('display current inventory', () => {
         it('should return the machines current inventory', () => {
             expect(theVendingMachine.currentInventory())
-            console.log(theVendingMachine.currentInventory())
         })
     })
 
