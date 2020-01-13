@@ -47,4 +47,16 @@ describe('vending machine', () => {
             expect(theVendingMachine.coinValue('tenCents')).toBe(0.1)
         })
     })
+
+    describe('return change', () => {
+        it('should return the change for two coins payment', () => {
+            expect(
+                theVendingMachine.returnChange(
+                    0,
+                    'twoDollars',
+                    'twoDollars',
+                ),
+            ).toEqual(1.5)
+        })
+    })
 })
