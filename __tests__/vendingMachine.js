@@ -36,6 +36,14 @@ describe('vending machine', () => {
         })
     })
 
+    describe('coins of that value', () => {
+        it('should return number of coins of that value', () => {
+            expect(
+                theVendingMachine.coinsOfThatValue('fiveCents'),
+            ).toEqual(75)
+        })
+    })
+
     describe('affordable products', () => {
         it('should return if the product can be bought', () => {
             expect(theVendingMachine.itemsForPurchase(3, 20))
