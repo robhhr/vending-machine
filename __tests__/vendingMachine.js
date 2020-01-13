@@ -22,7 +22,9 @@ describe('vending machine', () => {
 
     describe('it should return a successful purchase', () => {
         it('should return a successful purchase', () => {
-            expect(theVendingMachine.itemPurchase(1, 25)).toEqual(22)
+            expect(theVendingMachine.itemPurchase(1, 25)).toEqual(
+                21.25,
+            )
             console.log(theVendingMachine.itemPurchase(1, 25))
         })
     })
@@ -60,7 +62,7 @@ describe('vending machine', () => {
         it('should return the change for two coins payment', () => {
             expect(
                 theVendingMachine.returnChange(
-                    2,
+                    0,
                     'twoDollars',
                     'twoDollars',
                 ),
