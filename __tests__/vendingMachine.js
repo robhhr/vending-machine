@@ -52,11 +52,23 @@ describe('vending machine', () => {
         it('should return the change for two coins payment', () => {
             expect(
                 theVendingMachine.returnChange(
-                    0,
+                    1,
                     'twoDollars',
-                    'twoDollars',
+                    'oneDollar',
                 ),
-            ).toEqual(1.5)
+            ).toEqual(0)
+        })
+    })
+
+    describe('resupply change', () => {
+        it('should refill change to 50', () => {
+            expect(
+                theVendingMachine.resupplyChange(
+                    3,
+                    'twoDollars',
+                    'oneDollar',
+                ),
+            ).toEqual(120)
         })
     })
 })
