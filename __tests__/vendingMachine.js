@@ -60,7 +60,7 @@ describe('vending machine', () => {
         })
     })
 
-    describe('resupply change', () => {
+    describe('resupply change after purchase', () => {
         it('should refill change to 50', () => {
             expect(
                 theVendingMachine.resupplyChange(
@@ -72,7 +72,7 @@ describe('vending machine', () => {
         })
     })
 
-    describe('resupply inventory', () => {
+    describe('resupply inventory after purchase', () => {
         it('should resupply inventory by 1', () => {
             expect(
                 theVendingMachine.refillInventoryAfterPurchase(
